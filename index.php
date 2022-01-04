@@ -10,7 +10,8 @@
     <h1>App da Beatriz</h1>
     <?php
     require_once "model/Conexao.php";
-    $tecnologias = Conexao::select("tecnologia","id, nome")
+    $tecnologias = Conexao::select("tecnologia","id, nome");
+    print_r($tecnologias);
     ?>
 </body>
 </html>
