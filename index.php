@@ -7,6 +7,10 @@
     <title>Olá povos!</title>
 </head>
 <body>
-    <h1>Feliz ano novo!</h1>
+    <h1>App da Beatriz</h1>
+    <?php
+    require_once "model/Conexao.php";
+    $tecnologias = Conexao::select("tecnologia","id, nome")
+    ?>
 </body>
 </html>
